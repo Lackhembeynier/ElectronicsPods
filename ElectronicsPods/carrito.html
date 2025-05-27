@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - ElectronicsPods (EP)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ElectronicsPods <span class="logo-ep">(EP)</span></a>
+            </div>
+            <nav class="main-nav">
+                 <ul>
+                    <li><a href="index.html#hero">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="index.html#propuesta">Características</a></li>
+                    <li><a href="index.html#productos">Productos</a></li>
+                    <li><a href="index.html#testimonios">Testimonios</a></li>
+                    <li><a href="index.html#newsletter">Suscríbete</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="carrito.html" class="cart-icon" aria-label="Ver carrito de compras">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-item-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-page-section">
+            <div class="container">
+                <h1>Tu Carrito de Compras</h1>
+
+                <div id="cart-container">
+                </div>
+
+                <template id="cart-empty-template">
+                    <div class="cart-empty-message">
+                        <p>Tu carrito está actualmente vacío.</p>
+                        <a href="index.html#productos" class="cta-button">Explorar Productos</a>
+                    </div>
+                </template>
+
+                <template id="cart-content-template">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Producto</th>
+                                <th>Precio Unit.</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items-list">
+                        </tbody>
+                    </table>
+                    <div class="cart-summary">
+                        <h2>Resumen del Pedido</h2>
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="cart-subtotal">$0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Envío:</span>
+                            <span id="cart-shipping">Calculado en checkout</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="cart-total">$0</span>
+                        </div>
+                    </div>
+                    <div class="cart-actions">
+                        <a href="index.html#productos" class="cta-button-secondary">Seguir Comprando</a>
+                        <button class="cta-button" id="checkout-button">Proceder al Pago</button>
+                    </div>
+                    <div style="text-align: right; margin-top: 20px;">
+                         <button class="cta-button-secondary small-dangerous-button" id="empty-cart-button">Vaciar Carrito</button>
+                    </div>
+                </template>
+
+                 <template id="cart-item-row-template">
+                    <tr class="cart-item" data-product-id="">
+                        <td class="cart-item-image" data-label="Producto:">
+                            <img src="https://via.placeholder.com/80" alt="Nombre Producto">
+                        </td>
+                        <td class="cart-item-details">
+                            <span class="item-name">Nombre del Producto</span>
+                        </td>
+                        <td class="cart-item-unit-price" data-label="Precio Unit.:">$0</td>
+                        <td class="cart-item-quantity" data-label="Cantidad:">
+                            <div class="quantity-selector cart-quantity">
+                                <button class="quantity-btn decrease-qty" aria-label="Disminuir cantidad">-</button>
+                                <input type="number" class="item-quantity" value="1" min="1" max="10" aria-label="Cantidad">
+                                <button class="quantity-btn increase-qty" aria-label="Aumentar cantidad">+</button>
+                            </div>
+                        </td>
+                        <td class="cart-item-subtotal" data-label="Subtotal:">$0</td>
+                        <td class="cart-item-remove" data-label="Quitar:">
+                            <button class="remove-item-btn" aria-label="Eliminar producto"><i class="fas fa-trash-alt"></i></button>
+                        </td>
+                    </tr>
+                </template>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>ElectronicsPods (EP)</h4>
+                    <p>Diseño, fabricación y venta de productos de audio de alta calidad.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="index.html#productos">Productos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="faq.html">Preguntas Frecuentes (FAQ)</a></li>
+                        <li><a href="politicas-envio.html">Políticas de Envío</a></li>
+                        <li><a href="politica-garantia.html">Política de Garantía</a></li>
+                        <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© <span id="currentYear"></span> ElectronicsPods (EP). Todos los derechos reservados. Diseñado con <i class="fas fa-heart"></i> en Colombia.</p>
+                <p><span id="currentYear"></span> (Advertencia, esto no es una página de compra real, solo es una página ficticia)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

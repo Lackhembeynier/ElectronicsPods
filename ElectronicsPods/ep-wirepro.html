@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EP WirePro - Earphones de Alta Fidelidad - ElectronicsPods (EP)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ElectronicsPods <span class="logo-ep">(EP)</span></a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="index.html#hero">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="index.html#productos">Productos</a></li>
+                    <li><a href="index.html#testimonios">Testimonios</a></li>
+                    <li><a href="index.html#newsletter">Suscríbete</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="carrito.html" class="cart-icon" aria-label="Ver carrito de compras">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-item-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail-section">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Inicio</a> > <a href="index.html#productos">Earphones</a> > <span>EP WirePro</span>
+                </div>
+
+                <div class="product-layout">
+                    <div class="product-gallery">
+                        <div class="main-image-container">
+                            <img id="mainProductImage" src="https://carulla.vtexassets.com/arquivos/ids/6088120/audifonos-xiaomi-redmi-airdots-s-bluetooth-negros.jpg?v=637681549812000000" alt="EP WirePro - Vista Principal">
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="https://carulla.vtexassets.com/arquivos/ids/6088120/audifonos-xiaomi-redmi-airdots-s-bluetooth-negros.jpg?v=637681549812000000" alt="EP WirePro - Thumbnail 1" class="thumbnail active" onclick="changeImage('https://carulla.vtexassets.com/arquivos/ids/6088120/audifonos-xiaomi-redmi-airdots-s-bluetooth-negros.jpg?v=637681549812000000', this)">
+                            <img src="https://carulla.vtexassets.com/arquivos/ids/6088121/audifonos-xiaomi-redmi-airdots-s-bluetooth-negros.jpg?v=637681549812800000" alt="EP WirePro - Thumbnail 2" class="thumbnail" onclick="changeImage('https://carulla.vtexassets.com/arquivos/ids/6088121/audifonos-xiaomi-redmi-airdots-s-bluetooth-negros.jpg?v=637681549812800000', this)">
+                            <img src="https://carulla.vtexassets.com/arquivos/ids/6088122/audifonos-xiaomi-redmi-airdots-s-bluetooth-negros.jpg?v=637681549814500000" alt="EP WirePro - Thumbnail 3" class="thumbnail" onclick="changeImage('https://carulla.vtexassets.com/arquivos/ids/6088122/audifonos-xiaomi-redmi-airdots-s-bluetooth-negros.jpg?v=637681549814500000', this)">
+                            <img src="https://http2.mlstatic.com/D_NQ_NP_736339-MLA40756758831_022020-O.webp" alt="EP WirePro - Thumbnail 4" class="thumbnail" onclick="changeImage('https://http2.mlstatic.com/D_NQ_NP_736339-MLA40756758831_022020-O.webp', this)">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <h1>EP WirePro</h1>
+                        <p class="product-category-detail">Earphones de Alta Fidelidad con Cable Desmontable</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(98 Reseñas)</span>
+                        </div>
+                        <p class="product-price-detail">$320.000 COP</p>
+                        <p class="short-description">
+                            Para los puristas del audio que buscan una claridad y detalle insuperables. Los EP WirePro ofrecen una experiencia sonora auténtica con su avanzada configuración de drivers y cable de cobre OFC.
+                        </p>
+                        
+                        <div class="product-options">
+                            <label for="cable-connector-type">Tipo de Conector de Cable:</label>
+                            <select name="cable-connector-type" id="cable-connector-type">
+                                <option value="mmcx">MMCX (Estándar)</option>
+                                <option value="2pin_078">2-Pin 0.78mm</option>
+                            </select>
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn" aria-label="Disminuir cantidad">-</button>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" aria-label="Cantidad">
+                                <button class="quantity-btn" aria-label="Aumentar cantidad">+</button>
+                            </div>
+                            <button class="cta-button add-to-cart-button"><i class="fas fa-shopping-cart"></i> Añadir al Carrito</button>
+                        </div>
+                        
+                        <div class="product-extra-features">
+                            <p><i class="fas fa-check-circle"></i> Drivers Híbridos de Precisión (Dinámico + Armadura Balanceada)</p>
+                            <p><i class="fas fa-check-circle"></i> Cable Desmontable de Cobre OFC de Alta Pureza</p>
+                            <p><i class="fas fa-check-circle"></i> Cuerpo Ergonómico de Resina para Aislamiento y Confort</p>
+                        </div>
+
+                        <div class="product-accordion-details">
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    Descripción Detallada
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Los EP WirePro están meticulosamente diseñados para audiófilos que exigen una reproducción sonora precisa y sin compromisos. Con una configuración de drivers híbrida que combina un potente driver dinámico para bajos profundos y controlados, y uno (o varios) drivers de armadura balanceada para medios claros y agudos cristalinos y detallados, cada matiz de tu música cobra vida. El cable desmontable, fabricado con cobre libre de oxígeno (OFC) de alta pureza y múltiples núcleos, asegura una transmisión de señal óptima y minimiza la pérdida. Los conectores (MMCX o 2-Pin) ofrecen durabilidad y la posibilidad de personalizar tu experiencia con cables de terceros. Su diseño ergonómico, modelado a partir de miles de impresiones auditivas, se adapta cómodamente al canal auditivo, proporcionando un excelente aislamiento pasivo del ruido externo y permitiendo largas sesiones de escucha sin fatiga.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    Especificaciones Técnicas
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li><strong>Tipo:</strong> In-Ear Monitor (IEM), con cable</li>
+                                        <li><strong>Drivers:</strong> Híbrido: 1x Driver Dinámico de 10mm (diafragma de PET con recubrimiento de Berilio) + 1x Driver de Armadura Balanceada (Knowles personalizado para medios/altos)</li>
+                                        <li><strong>Respuesta de Frecuencia:</strong> 15Hz - 40kHz</li>
+                                        <li><strong>Impedancia:</strong> 18 Ohms (±10%)</li>
+                                        <li><strong>Sensibilidad:</strong> 109 dB/mW (±2dB @ 1kHz)</li>
+                                        <li><strong>Cable:</strong> 1.25m, desmontable (conector MMCX o 2-Pin 0.78mm seleccionable), 4 núcleos de Cobre Monocristalino 6N OCC Litz</li>
+                                        <li><strong>Conector Jack de Fuente:</strong> 3.5mm TRS estéreo (opción a 2.5mm o 4.4mm balanceado disponible por separado)</li>
+                                        <li><strong>Material del Cuerpo:</strong> Resina acrílica de grado médico impresa en 3D, con placa frontal de madera estabilizada o aleación de aluminio (depende del acabado).</li>
+                                        <li><strong>Peso (solo earphones):</strong> Aprox. 6g por lado</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    Qué hay en la caja
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li>Earphones EP WirePro</li>
+                                        <li>Cable desmontable premium (conector elegido)</li>
+                                        <li>Estuche de transporte rígido con interior suave</li>
+                                        <li>Juego de 3 pares de almohadillas de silicona (Balanceadas - S, M, L)</li>
+                                        <li>Juego de 3 pares de almohadillas de silicona (Énfasis en Bajos - S, M, L)</li>
+                                        <li>Juego de 2 pares de almohadillas de espuma con memoria (M, L)</li>
+                                        <li>Herramienta de limpieza de boquilla</li>
+                                        <li>Clip para cable</li>
+                                        <li>Manual de Usuario Detallado y Tarjeta de Garantía</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos-relacionados" class="products-section">
+            <div class="container">
+                <h2>También te podría interesar</h2>
+                <div class="product-grid">
+                     <div class="product-card">
+                        <img src="https://acdn-us.mitiendanube.com/stores/093/864/products/eb-tws-400-negro-5468264e3018f3daa417235015450851-1024-1024.jpg" alt="EP Aura Buds">
+                        <h3>EP Aura Buds</h3>
+                        <p class="product-category">Earbuds Inalámbricos</p>
+                        <p class="product-price">$450.000 COP</p>
+                        <a href="ep-aura-buds.html" class="cta-button-secondary">Ver Detalles</a>
+                    </div>
+                     <div class="product-card">
+                        <img src="https://panamericana.vtexassets.com/arquivos/ids/493023/audifonos-negros-inalambricos-tipo-diadema-sony-wh-ch520-2-27242925205.jpg?v=638187164064900000" alt="EP Sonus X">
+                        <h3>EP Sonus X</h3>
+                        <p class="product-category">Headphones con ANC</p>
+                        <p class="product-price">$890.000 COP</p>
+                        <a href="ep-sonus-x.html" class="cta-button-secondary">Ver Detalles</a>
+                    </div>
+                     <div class="product-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwiAALRvwP5Tbe4ipS7QxM2fSoUfKQFJUvpHKl3GG69e0Tp3ODeJngbqCKjdk-2d8uDvk&usqp=CAU" alt="DAC Portatil EP">
+                        <h3>EP StreamDAC Mini</h3>
+                        <p class="product-category">DAC/Amplificador Portátil USB</p>
+                        <p class="product-price">$550.000 COP</p>
+                        <a href="#" class="cta-button-secondary">Ver Detalles</a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>ElectronicsPods (EP)</h4>
+                    <p>Diseño, fabricación y venta de productos de audio de alta calidad.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="index.html#productos">Productos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="faq.html">Preguntas Frecuentes (FAQ)</a></li>
+                        <li><a href="politicas-envio.html">Políticas de Envío</a></li>
+                        <li><a href="politica-garantia.html">Política de Garantía</a></li>
+                        <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© <span id="currentYear"></span> ElectronicsPods (EP). Todos los derechos reservados. Diseñado con <i class="fas fa-heart"></i> en Colombia.</p>
+                <p><span id="currentYear"></span> (Advertencia, esto no es una página de compra real, solo es una página ficticia)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

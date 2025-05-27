@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EP Sonus X - Headphones con ANC - ElectronicsPods (EP)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">ElectronicsPods <span class="logo-ep">(EP)</span></a>
+            </div>
+            <nav class="main-nav">
+                <button class="menu-toggle" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="index.html#hero">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="index.html#productos">Productos</a></li>
+                    <li><a href="index.html#testimonios">Testimonios</a></li>
+                    <li><a href="index.html#newsletter">Suscríbete</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="carrito.html" class="cart-icon" aria-label="Ver carrito de compras">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-item-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-detail-section">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Inicio</a> > <a href="index.html#productos">Headphones</a> > <span>EP Sonus X</span>
+                </div>
+
+                <div class="product-layout">
+                    <div class="product-gallery">
+                        <div class="main-image-container">
+                            <img id="mainProductImage" src="https://panamericana.vtexassets.com/arquivos/ids/493023/audifonos-negros-inalambricos-tipo-diadema-sony-wh-ch520-2-27242925205.jpg?v=638187164064900000" alt="EP Sonus X - Vista Principal">
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="https://panamericana.vtexassets.com/arquivos/ids/493022-800-auto?v=638187163993970000&width=800&height=auto&aspect=true" alt="EP Sonus X - Thumbnail 1" class="thumbnail active" onclick="changeImage('https://panamericana.vtexassets.com/arquivos/ids/493022-800-auto?v=638187163993970000&width=800&height=auto&aspect=true', this)">
+                            <img src="https://panamericana.vtexassets.com/arquivos/ids/493024-800-auto?v=638187164109800000&width=800&height=auto&aspect=true" alt="EP Sonus X - Thumbnail 2" class="thumbnail" onclick="changeImage('https://panamericana.vtexassets.com/arquivos/ids/493024-800-auto?v=638187164109800000&width=800&height=auto&aspect=true', this)">
+                            <img src="https://panamericana.vtexassets.com/arquivos/ids/493025-800-auto?v=638187164154400000&width=800&height=auto&aspect=true" alt="EP Sonus X - Thumbnail 3" class="thumbnail" onclick="changeImage('https://panamericana.vtexassets.com/arquivos/ids/493025-800-auto?v=638187164154400000&width=800&height=auto&aspect=true', this)">
+                            <img src="https://panamericana.vtexassets.com/arquivos/ids/493026-800-auto?v=638187164347270000&width=800&height=auto&aspect=true" alt="EP Sonus X - Thumbnail 4" class="thumbnail" onclick="changeImage('https://panamericana.vtexassets.com/arquivos/ids/493026-800-auto?v=638187164347270000&width=800&height=auto&aspect=true', this)">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <h1>EP Sonus X</h1> 
+                        <p class="product-category-detail">Headphones Over-Ear con Cancelación de Ruido Adaptativa</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(210 Reseñas)</span>
+                        </div>
+                        <p class="product-price-detail">$890.000 COP</p> 
+                        <p class="short-description">
+                            Sumérgete en un mundo de sonido puro con los EP Sonus X. Cancelación de ruido adaptativa de última generación, audio de alta resolución y un confort excepcional para horas de escucha ininterrumpida.
+                        </p>
+                        
+                        <div class="product-options">
+                            <label for="color-select">Color:</label>
+                            <select name="color" id="color-select">
+                                <option value="negro-mate">Negro Mate</option>
+                                <option value="plata-artico">Plata Ártico</option>
+                                <option value="azul-noche">Azul Noche Profundo</option>
+                            </select>
+                        </div>
+
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn" aria-label="Disminuir cantidad">-</button>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10" aria-label="Cantidad">
+                                <button class="quantity-btn" aria-label="Aumentar cantidad">+</button>
+                            </div>
+                            <button class="cta-button add-to-cart-button"><i class="fas fa-shopping-cart"></i> Añadir al Carrito</button>
+                        </div>
+                        
+                        <div class="product-extra-features">
+                            <p><i class="fas fa-check-circle"></i> Cancelación de Ruido Adaptativa Multi-Modo</p>
+                            <p><i class="fas fa-check-circle"></i> Drivers de 40mm con Diafragma de Grafeno</p>
+                            <p><i class="fas fa-check-circle"></i> Hasta 40 Horas de Autonomía (ANC Encendido)</p>
+                            <p><i class="fas fa-check-circle"></i> Diseño Plegable y Portátil con Estuche Rígido</p>
+                        </div>
+
+                        <div class="product-accordion-details">
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    Descripción Detallada
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Los EP Sonus X son la culminación de la ingeniería acústica y el diseño ergonómico. Creados para el viajero moderno, el profesional ocupado y el audiófilo exigente, estos headphones over-ear ofrecen una experiencia de escucha inigualable. Su sistema de Cancelación Activa de Ruido (ANC) adaptativa inteligente analiza tu entorno en tiempo real para bloquear eficazmente el ruido no deseado, desde el murmullo de una oficina hasta el rugido de un motor de avión. Los drivers de 40mm, fabricados con precisión y recubiertos de grafeno, proporcionan un escenario sonoro amplio y detallado, con bajos profundos, medios articulados y agudos cristalinos. Su diseño ligero, con almohadillas de espuma viscoelástica y diadema ajustable, garantiza un confort excepcional incluso durante largas sesiones de escucha. Además, su conectividad multipunto te permite cambiar fácilmente entre dos dispositivos Bluetooth.</p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    Especificaciones Técnicas
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li><strong>Tipo:</strong> Over-Ear, Circumaural Cerrado</li>
+                                        <li><strong>Drivers:</strong> Dinámicos de 40mm con diafragma recubierto de grafeno</li>
+                                        <li><strong>Cancelación de Ruido:</strong> ANC Adaptativa (hasta -38dB) con Modo Transparencia</li>
+                                        <li><strong>Bluetooth:</strong> Versión 5.2 (Perfiles: A2DP, AVRCP, HFP, HSP, BLE)</li>
+                                        <li><strong>Códecs Soportados:</strong> AAC, SBC, aptX HD, LDAC</li>
+                                        <li><strong>Respuesta de Frecuencia:</strong> 5Hz - 40kHz (con cable, Hi-Res Audio)</li>
+                                        <li><strong>Autonomía:</strong> Hasta 40 horas (ANC encendido), Hasta 60 horas (ANC apagado)</li>
+                                        <li><strong>Tiempo de Carga:</strong> Aprox. 2.5 horas (Carga rápida: 10 min para 5 horas de reproducción)</li>
+                                        <li><strong>Puertos:</strong> USB-C (carga), Jack 3.5mm (para uso con cable)</li>
+                                        <li><strong>Peso:</strong> Aprox. 255g</li>
+                                        <li><strong>Características Adicionales:</strong> Controles táctiles, Detección de uso (pausa/reanudación automática), Micrófonos con reducción de ruido para llamadas claras.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header">
+                                    Qué hay en la caja
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <ul>
+                                        <li>Headphones EP Sonus X</li>
+                                        <li>Estuche de viaje rígido premium</li>
+                                        <li>Cable de Carga USB-C</li>
+                                        <li>Cable de audio de 3.5mm</li>
+                                        <li>Adaptador para avión</li>
+                                        <li>Manual de Usuario y Garantía</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos-relacionados" class="products-section">
+            <div class="container">
+                <h2>También te podría interesar</h2>
+                <div class="product-grid">
+                     <div class="product-card">
+                        <img src="https://acdn-us.mitiendanube.com/stores/093/864/products/eb-tws-400-negro-5468264e3018f3daa417235015450851-1024-1024.jpg" alt="EP Aura Buds">
+                        <h3>EP Aura Buds</h3>
+                        <p class="product-category">Earbuds Inalámbricos</p>
+                        <p class="product-price">$450.000 COP</p>
+                        <a href="ep-aura-buds.html" class="cta-button-secondary">Ver Detalles</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://carulla.vtexassets.com/arquivos/ids/6088120/audifonos-xiaomi-redmi-airdots-s-bluetooth-negros.jpg?v=637681549812000000" alt="EP WirePro">
+                        <h3>EP WirePro</h3>
+                        <p class="product-category">Earphones de Alta Fidelidad</p>
+                        <p class="product-price">$320.000 COP</p>
+                        <a href="ep-wirepro.html" class="cta-button-secondary">Ver Detalles</a>
+                    </div>
+                     <div class="product-card">
+                        <img src="https://poseidonbogota.com/wp-content/uploads/2023/10/audifonos_conduccion_ocea_a.4-transformed.jpeg" alt="SoundBar Mini">
+                        <h3>EP SoundBar Mini</h3>
+                        <p class="product-category">Barra de Sonido Compacta</p>
+                        <p class="product-price">$650.000 COP</p>
+                        <a href="#" class="cta-button-secondary">Ver Detalles</a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>ElectronicsPods (EP)</h4>
+                    <p>Diseño, fabricación y venta de productos de audio de alta calidad.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="index.html#productos">Productos</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Soporte</h4>
+                    <ul>
+                        <li><a href="faq.html">Preguntas Frecuentes (FAQ)</a></li>
+                        <li><a href="politicas-envio.html">Políticas de Envío</a></li>
+                        <li><a href="politica-garantia.html">Política de Garantía</a></li>
+                        <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                        <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© <span id="currentYear"></span> ElectronicsPods (EP). Todos los derechos reservados. Diseñado con <i class="fas fa-heart"></i> en Colombia.</p>
+                <p><span id="currentYear"></span> (Advertencia, esto no es una página de compra real, solo es una página ficticia)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
